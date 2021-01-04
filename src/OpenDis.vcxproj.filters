@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{c90dcbbd-1a14-4e3b-b35a-1b12b0a55a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dis6">
+      <UniqueIdentifier>{17e948b3-9d85-4b63-994a-5e4417a9f160}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\Conversion.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DataStream.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Endian.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\IBufferProcessor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\IncomingMessage.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\IPacketProcessor.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\IPduBank.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Masks.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PacketFactory.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PDUBank.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PduFactory.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\PDUType.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\StreamUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="dis6\Orientation.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DeadReckoningParameter.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Marking.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcknowledgePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcknowledgeReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcousticBeamData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcousticBeamFundamentalParameter.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcousticEmitter.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcousticEmitterSystem.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AcousticEmitterSystemData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ActionRequestPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ActionRequestReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ActionResponsePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ActionResponseReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AggregateID.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AggregateMarking.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AggregateStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AggregateType.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AngularVelocityVector.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\AntennaLocation.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ApaData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ArealObjectStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ArticulationParameter.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\BeamAntennaPattern.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\BeamData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\BurstDescriptor.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ClockTime.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\CollisionElasticPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\CollisionPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\CommentPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\CommentReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\CreateEntityPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\CreateEntityReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DataPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DataQueryPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DataQueryReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DataReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DesignatorPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DetonationPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\DistributedEmissionsFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EightByteChunk.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ElectromagneticEmissionBeamData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ElectromagneticEmissionsPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ElectromagneticEmissionSystemData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EmitterSystem.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EntityID.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EntityInformationFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EntityManagementFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EntityStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EntityStateUpdatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EntityType.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Environment.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EnvironmentalProcessPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EventID.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EventReportPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\EventReportReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\FastEntityStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\FirePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\FixedDatum.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\FourByteChunk.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\FundamentalParameterData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\FundamentalParameterDataIff.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\GridAxisRecord.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\GridAxisRecordRepresentation0.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\GridAxisRecordRepresentation1.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\GridAxisRecordRepresentation2.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\GriddedDataPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IffAtcNavAidsLayer1Pdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IffAtcNavAidsLayer2Pdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IffFundamentalData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IntercomCommunicationsParameters.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IntercomControlPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IntercomSignalPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IsGroupOfPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\IsPartOfPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\LayerHeader.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\LinearObjectStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\LinearSegmentParameter.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\LogisticsFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\LogisticsPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\MinefieldDataPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\MinefieldFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\MinefieldPduFamily.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\MinefieldQueryPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\MinefieldResponseNackPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\MinefieldStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ModulationType.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\msLibMacro.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\NamedLocation.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ObjectType.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\OneByteChunk.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Pdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\PduContainer.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Point.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\PointObjectStatePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\PropulsionSystemData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RadioCommunicationsFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RadioEntityType.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ReceiverPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RecordQueryReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RecordSet.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Relationship.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RemoveEntityPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RemoveEntityReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RepairCompletePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\RepairResponsePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ResupplyCancelPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ResupplyOfferPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ResupplyReceivedPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SeesPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ServiceRequestPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SetDataPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SetDataReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SetRecordReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\ShaftRPMs.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SignalPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SimulationAddress.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SimulationManagementFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SimulationManagementWithReliabilityFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SixByteChunk.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SphericalHarmonicAntennaPattern.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\StartResumePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\StartResumeReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\StopFreezePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\StopFreezeReliablePdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SupplyQuantity.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\symbolic_names.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SyntheticEnvironmentFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\SystemID.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\TrackJamTarget.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\TransferControlRequestPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\TransmitterPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\TwoByteChunk.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\UaPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\VariableDatum.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Vector3Double.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\Vector3Float.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\VectoringNozzleSystemData.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+    <ClInclude Include="dis6\WarfareFamilyPdu.h">
+      <Filter>Dis6</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="utils\Conversion.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DataStream.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\IncomingMessage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PacketFactory.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PDUBank.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\PduFactory.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\StreamUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Orientation.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DeadReckoningParameter.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Marking.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcknowledgePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcknowledgeReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcousticBeamData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcousticBeamFundamentalParameter.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcousticEmitter.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcousticEmitterSystem.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AcousticEmitterSystemData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ActionRequestPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ActionRequestReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ActionResponsePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ActionResponseReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AggregateID.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AggregateMarking.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AggregateStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AggregateType.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AngularVelocityVector.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\AntennaLocation.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ApaData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ArealObjectStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ArticulationParameter.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\BeamAntennaPattern.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\BeamData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\BurstDescriptor.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ClockTime.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\CollisionElasticPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\CollisionPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\CommentPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\CommentReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\CreateEntityPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\CreateEntityReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DataPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DataQueryPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DataQueryReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DataReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DesignatorPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DetonationPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\DistributedEmissionsFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EightByteChunk.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ElectromagneticEmissionBeamData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ElectromagneticEmissionsPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ElectromagneticEmissionSystemData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EmitterSystem.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EntityID.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EntityInformationFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EntityManagementFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EntityStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EntityStateUpdatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EntityType.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Environment.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EnvironmentalProcessPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EventID.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EventReportPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\EventReportReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\FastEntityStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\FirePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\FixedDatum.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\FourByteChunk.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\FundamentalParameterData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\FundamentalParameterDataIff.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\GridAxisRecord.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\GridAxisRecordRepresentation0.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\GridAxisRecordRepresentation1.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\GridAxisRecordRepresentation2.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\GriddedDataPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IffAtcNavAidsLayer1Pdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IffAtcNavAidsLayer2Pdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IffFundamentalData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IntercomCommunicationsParameters.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IntercomControlPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IntercomSignalPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IsGroupOfPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\IsPartOfPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\LayerHeader.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\LinearObjectStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\LinearSegmentParameter.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\LogisticsFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\LogisticsPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\MinefieldDataPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\MinefieldFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\MinefieldPduFamily.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\MinefieldQueryPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\MinefieldResponseNackPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\MinefieldStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ModulationType.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\NamedLocation.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ObjectType.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\OneByteChunk.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Pdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\PduContainer.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Point.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\PointObjectStatePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\PropulsionSystemData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RadioCommunicationsFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RadioEntityType.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ReceiverPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RecordQueryReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RecordSet.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Relationship.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RemoveEntityPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RemoveEntityReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RepairCompletePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\RepairResponsePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ResupplyCancelPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ResupplyOfferPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ResupplyReceivedPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SeesPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ServiceRequestPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SetDataPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SetDataReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SetRecordReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\ShaftRPMs.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SignalPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SimulationAddress.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SimulationManagementFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SimulationManagementWithReliabilityFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SixByteChunk.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SphericalHarmonicAntennaPattern.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\StartResumePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\StartResumeReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\StopFreezePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\StopFreezeReliablePdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SupplyQuantity.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SyntheticEnvironmentFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\SystemID.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\TrackJamTarget.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\TransferControlRequestPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\TransmitterPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\TwoByteChunk.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\UaPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\VariableDatum.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Vector3Double.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\Vector3Float.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\VectoringNozzleSystemData.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+    <ClCompile Include="dis6\WarfareFamilyPdu.cpp">
+      <Filter>Dis6</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

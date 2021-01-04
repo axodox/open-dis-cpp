@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dis6\AcknowledgePdu.h" />
+    <ClInclude Include="dis6\AcknowledgeReliablePdu.h" />
+    <ClInclude Include="dis6\AcousticBeamData.h" />
+    <ClInclude Include="dis6\AcousticBeamFundamentalParameter.h" />
+    <ClInclude Include="dis6\AcousticEmitter.h" />
+    <ClInclude Include="dis6\AcousticEmitterSystem.h" />
+    <ClInclude Include="dis6\AcousticEmitterSystemData.h" />
+    <ClInclude Include="dis6\ActionRequestPdu.h" />
+    <ClInclude Include="dis6\ActionRequestReliablePdu.h" />
+    <ClInclude Include="dis6\ActionResponsePdu.h" />
+    <ClInclude Include="dis6\ActionResponseReliablePdu.h" />
+    <ClInclude Include="dis6\AggregateID.h" />
+    <ClInclude Include="dis6\AggregateMarking.h" />
+    <ClInclude Include="dis6\AggregateStatePdu.h" />
+    <ClInclude Include="dis6\AggregateType.h" />
+    <ClInclude Include="dis6\AngularVelocityVector.h" />
+    <ClInclude Include="dis6\AntennaLocation.h" />
+    <ClInclude Include="dis6\ApaData.h" />
+    <ClInclude Include="dis6\ArealObjectStatePdu.h" />
+    <ClInclude Include="dis6\ArticulationParameter.h" />
+    <ClInclude Include="dis6\BeamAntennaPattern.h" />
+    <ClInclude Include="dis6\BeamData.h" />
+    <ClInclude Include="dis6\BurstDescriptor.h" />
+    <ClInclude Include="dis6\ClockTime.h" />
+    <ClInclude Include="dis6\CollisionElasticPdu.h" />
+    <ClInclude Include="dis6\CollisionPdu.h" />
+    <ClInclude Include="dis6\CommentPdu.h" />
+    <ClInclude Include="dis6\CommentReliablePdu.h" />
+    <ClInclude Include="dis6\CreateEntityPdu.h" />
+    <ClInclude Include="dis6\CreateEntityReliablePdu.h" />
+    <ClInclude Include="dis6\DataPdu.h" />
+    <ClInclude Include="dis6\DataQueryPdu.h" />
+    <ClInclude Include="dis6\DataQueryReliablePdu.h" />
+    <ClInclude Include="dis6\DataReliablePdu.h" />
+    <ClInclude Include="dis6\DeadReckoningParameter.h" />
+    <ClInclude Include="dis6\DesignatorPdu.h" />
+    <ClInclude Include="dis6\DetonationPdu.h" />
+    <ClInclude Include="dis6\DistributedEmissionsFamilyPdu.h" />
+    <ClInclude Include="dis6\EightByteChunk.h" />
+    <ClInclude Include="dis6\ElectromagneticEmissionBeamData.h" />
+    <ClInclude Include="dis6\ElectromagneticEmissionsPdu.h" />
+    <ClInclude Include="dis6\ElectromagneticEmissionSystemData.h" />
+    <ClInclude Include="dis6\EmitterSystem.h" />
+    <ClInclude Include="dis6\EntityID.h" />
+    <ClInclude Include="dis6\EntityInformationFamilyPdu.h" />
+    <ClInclude Include="dis6\EntityManagementFamilyPdu.h" />
+    <ClInclude Include="dis6\EntityStatePdu.h" />
+    <ClInclude Include="dis6\EntityStateUpdatePdu.h" />
+    <ClInclude Include="dis6\EntityType.h" />
+    <ClInclude Include="dis6\Environment.h" />
+    <ClInclude Include="dis6\EnvironmentalProcessPdu.h" />
+    <ClInclude Include="dis6\EventID.h" />
+    <ClInclude Include="dis6\EventReportPdu.h" />
+    <ClInclude Include="dis6\EventReportReliablePdu.h" />
+    <ClInclude Include="dis6\FastEntityStatePdu.h" />
+    <ClInclude Include="dis6\FirePdu.h" />
+    <ClInclude Include="dis6\FixedDatum.h" />
+    <ClInclude Include="dis6\FourByteChunk.h" />
+    <ClInclude Include="dis6\FundamentalParameterData.h" />
+    <ClInclude Include="dis6\FundamentalParameterDataIff.h" />
+    <ClInclude Include="dis6\GridAxisRecord.h" />
+    <ClInclude Include="dis6\GridAxisRecordRepresentation0.h" />
+    <ClInclude Include="dis6\GridAxisRecordRepresentation1.h" />
+    <ClInclude Include="dis6\GridAxisRecordRepresentation2.h" />
+    <ClInclude Include="dis6\GriddedDataPdu.h" />
+    <ClInclude Include="dis6\IffAtcNavAidsLayer1Pdu.h" />
+    <ClInclude Include="dis6\IffAtcNavAidsLayer2Pdu.h" />
+    <ClInclude Include="dis6\IffFundamentalData.h" />
+    <ClInclude Include="dis6\IntercomCommunicationsParameters.h" />
+    <ClInclude Include="dis6\IntercomControlPdu.h" />
+    <ClInclude Include="dis6\IntercomSignalPdu.h" />
+    <ClInclude Include="dis6\IsGroupOfPdu.h" />
+    <ClInclude Include="dis6\IsPartOfPdu.h" />
+    <ClInclude Include="dis6\LayerHeader.h" />
+    <ClInclude Include="dis6\LinearObjectStatePdu.h" />
+    <ClInclude Include="dis6\LinearSegmentParameter.h" />
+    <ClInclude Include="dis6\LogisticsFamilyPdu.h" />
+    <ClInclude Include="dis6\LogisticsPdu.h" />
+    <ClInclude Include="dis6\Marking.h" />
+    <ClInclude Include="dis6\MinefieldDataPdu.h" />
+    <ClInclude Include="dis6\MinefieldFamilyPdu.h" />
+    <ClInclude Include="dis6\MinefieldPduFamily.h" />
+    <ClInclude Include="dis6\MinefieldQueryPdu.h" />
+    <ClInclude Include="dis6\MinefieldResponseNackPdu.h" />
+    <ClInclude Include="dis6\MinefieldStatePdu.h" />
+    <ClInclude Include="dis6\ModulationType.h" />
+    <ClInclude Include="dis6\msLibMacro.h" />
+    <ClInclude Include="dis6\NamedLocation.h" />
+    <ClInclude Include="dis6\ObjectType.h" />
+    <ClInclude Include="dis6\OneByteChunk.h" />
+    <ClInclude Include="dis6\Orientation.h" />
+    <ClInclude Include="dis6\Pdu.h" />
+    <ClInclude Include="dis6\PduContainer.h" />
+    <ClInclude Include="dis6\Point.h" />
+    <ClInclude Include="dis6\PointObjectStatePdu.h" />
+    <ClInclude Include="dis6\PropulsionSystemData.h" />
+    <ClInclude Include="dis6\RadioCommunicationsFamilyPdu.h" />
+    <ClInclude Include="dis6\RadioEntityType.h" />
+    <ClInclude Include="dis6\ReceiverPdu.h" />
+    <ClInclude Include="dis6\RecordQueryReliablePdu.h" />
+    <ClInclude Include="dis6\RecordSet.h" />
+    <ClInclude Include="dis6\Relationship.h" />
+    <ClInclude Include="dis6\RemoveEntityPdu.h" />
+    <ClInclude Include="dis6\RemoveEntityReliablePdu.h" />
+    <ClInclude Include="dis6\RepairCompletePdu.h" />
+    <ClInclude Include="dis6\RepairResponsePdu.h" />
+    <ClInclude Include="dis6\ResupplyCancelPdu.h" />
+    <ClInclude Include="dis6\ResupplyOfferPdu.h" />
+    <ClInclude Include="dis6\ResupplyReceivedPdu.h" />
+    <ClInclude Include="dis6\SeesPdu.h" />
+    <ClInclude Include="dis6\ServiceRequestPdu.h" />
+    <ClInclude Include="dis6\SetDataPdu.h" />
+    <ClInclude Include="dis6\SetDataReliablePdu.h" />
+    <ClInclude Include="dis6\SetRecordReliablePdu.h" />
+    <ClInclude Include="dis6\ShaftRPMs.h" />
+    <ClInclude Include="dis6\SignalPdu.h" />
+    <ClInclude Include="dis6\SimulationAddress.h" />
+    <ClInclude Include="dis6\SimulationManagementFamilyPdu.h" />
+    <ClInclude Include="dis6\SimulationManagementWithReliabilityFamilyPdu.h" />
+    <ClInclude Include="dis6\SixByteChunk.h" />
+    <ClInclude Include="dis6\SphericalHarmonicAntennaPattern.h" />
+    <ClInclude Include="dis6\StartResumePdu.h" />
+    <ClInclude Include="dis6\StartResumeReliablePdu.h" />
+    <ClInclude Include="dis6\StopFreezePdu.h" />
+    <ClInclude Include="dis6\StopFreezeReliablePdu.h" />
+    <ClInclude Include="dis6\SupplyQuantity.h" />
+    <ClInclude Include="dis6\symbolic_names.h" />
+    <ClInclude Include="dis6\SyntheticEnvironmentFamilyPdu.h" />
+    <ClInclude Include="dis6\SystemID.h" />
+    <ClInclude Include="dis6\TrackJamTarget.h" />
+    <ClInclude Include="dis6\TransferControlRequestPdu.h" />
+    <ClInclude Include="dis6\TransmitterPdu.h" />
+    <ClInclude Include="dis6\TwoByteChunk.h" />
+    <ClInclude Include="dis6\UaPdu.h" />
+    <ClInclude Include="dis6\VariableDatum.h" />
+    <ClInclude Include="dis6\Vector3Double.h" />
+    <ClInclude Include="dis6\Vector3Float.h" />
+    <ClInclude Include="dis6\VectoringNozzleSystemData.h" />
+    <ClInclude Include="dis6\WarfareFamilyPdu.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="utils\Conversion.h" />
+    <ClInclude Include="utils\DataStream.h" />
+    <ClInclude Include="utils\Endian.h" />
+    <ClInclude Include="utils\IBufferProcessor.h" />
+    <ClInclude Include="utils\IncomingMessage.h" />
+    <ClInclude Include="utils\IPacketProcessor.h" />
+    <ClInclude Include="utils\IPduBank.h" />
+    <ClInclude Include="utils\Masks.h" />
+    <ClInclude Include="utils\PacketFactory.h" />
+    <ClInclude Include="utils\PDUBank.h" />
+    <ClInclude Include="utils\PduFactory.h" />
+    <ClInclude Include="utils\PDUType.h" />
+    <ClInclude Include="utils\StreamUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dis6\AcknowledgePdu.cpp" />
+    <ClCompile Include="dis6\AcknowledgeReliablePdu.cpp" />
+    <ClCompile Include="dis6\AcousticBeamData.cpp" />
+    <ClCompile Include="dis6\AcousticBeamFundamentalParameter.cpp" />
+    <ClCompile Include="dis6\AcousticEmitter.cpp" />
+    <ClCompile Include="dis6\AcousticEmitterSystem.cpp" />
+    <ClCompile Include="dis6\AcousticEmitterSystemData.cpp" />
+    <ClCompile Include="dis6\ActionRequestPdu.cpp" />
+    <ClCompile Include="dis6\ActionRequestReliablePdu.cpp" />
+    <ClCompile Include="dis6\ActionResponsePdu.cpp" />
+    <ClCompile Include="dis6\ActionResponseReliablePdu.cpp" />
+    <ClCompile Include="dis6\AggregateID.cpp" />
+    <ClCompile Include="dis6\AggregateMarking.cpp" />
+    <ClCompile Include="dis6\AggregateStatePdu.cpp" />
+    <ClCompile Include="dis6\AggregateType.cpp" />
+    <ClCompile Include="dis6\AngularVelocityVector.cpp" />
+    <ClCompile Include="dis6\AntennaLocation.cpp" />
+    <ClCompile Include="dis6\ApaData.cpp" />
+    <ClCompile Include="dis6\ArealObjectStatePdu.cpp" />
+    <ClCompile Include="dis6\ArticulationParameter.cpp" />
+    <ClCompile Include="dis6\BeamAntennaPattern.cpp" />
+    <ClCompile Include="dis6\BeamData.cpp" />
+    <ClCompile Include="dis6\BurstDescriptor.cpp" />
+    <ClCompile Include="dis6\ClockTime.cpp" />
+    <ClCompile Include="dis6\CollisionElasticPdu.cpp" />
+    <ClCompile Include="dis6\CollisionPdu.cpp" />
+    <ClCompile Include="dis6\CommentPdu.cpp" />
+    <ClCompile Include="dis6\CommentReliablePdu.cpp" />
+    <ClCompile Include="dis6\CreateEntityPdu.cpp" />
+    <ClCompile Include="dis6\CreateEntityReliablePdu.cpp" />
+    <ClCompile Include="dis6\DataPdu.cpp" />
+    <ClCompile Include="dis6\DataQueryPdu.cpp" />
+    <ClCompile Include="dis6\DataQueryReliablePdu.cpp" />
+    <ClCompile Include="dis6\DataReliablePdu.cpp" />
+    <ClCompile Include="dis6\DeadReckoningParameter.cpp" />
+    <ClCompile Include="dis6\DesignatorPdu.cpp" />
+    <ClCompile Include="dis6\DetonationPdu.cpp" />
+    <ClCompile Include="dis6\DistributedEmissionsFamilyPdu.cpp" />
+    <ClCompile Include="dis6\EightByteChunk.cpp" />
+    <ClCompile Include="dis6\ElectromagneticEmissionBeamData.cpp" />
+    <ClCompile Include="dis6\ElectromagneticEmissionsPdu.cpp" />
+    <ClCompile Include="dis6\ElectromagneticEmissionSystemData.cpp" />
+    <ClCompile Include="dis6\EmitterSystem.cpp" />
+    <ClCompile Include="dis6\EntityID.cpp" />
+    <ClCompile Include="dis6\EntityInformationFamilyPdu.cpp" />
+    <ClCompile Include="dis6\EntityManagementFamilyPdu.cpp" />
+    <ClCompile Include="dis6\EntityStatePdu.cpp" />
+    <ClCompile Include="dis6\EntityStateUpdatePdu.cpp" />
+    <ClCompile Include="dis6\EntityType.cpp" />
+    <ClCompile Include="dis6\Environment.cpp" />
+    <ClCompile Include="dis6\EnvironmentalProcessPdu.cpp" />
+    <ClCompile Include="dis6\EventID.cpp" />
+    <ClCompile Include="dis6\EventReportPdu.cpp" />
+    <ClCompile Include="dis6\EventReportReliablePdu.cpp" />
+    <ClCompile Include="dis6\FastEntityStatePdu.cpp" />
+    <ClCompile Include="dis6\FirePdu.cpp" />
+    <ClCompile Include="dis6\FixedDatum.cpp" />
+    <ClCompile Include="dis6\FourByteChunk.cpp" />
+    <ClCompile Include="dis6\FundamentalParameterData.cpp" />
+    <ClCompile Include="dis6\FundamentalParameterDataIff.cpp" />
+    <ClCompile Include="dis6\GridAxisRecord.cpp" />
+    <ClCompile Include="dis6\GridAxisRecordRepresentation0.cpp" />
+    <ClCompile Include="dis6\GridAxisRecordRepresentation1.cpp" />
+    <ClCompile Include="dis6\GridAxisRecordRepresentation2.cpp" />
+    <ClCompile Include="dis6\GriddedDataPdu.cpp" />
+    <ClCompile Include="dis6\IffAtcNavAidsLayer1Pdu.cpp" />
+    <ClCompile Include="dis6\IffAtcNavAidsLayer2Pdu.cpp" />
+    <ClCompile Include="dis6\IffFundamentalData.cpp" />
+    <ClCompile Include="dis6\IntercomCommunicationsParameters.cpp" />
+    <ClCompile Include="dis6\IntercomControlPdu.cpp" />
+    <ClCompile Include="dis6\IntercomSignalPdu.cpp" />
+    <ClCompile Include="dis6\IsGroupOfPdu.cpp" />
+    <ClCompile Include="dis6\IsPartOfPdu.cpp" />
+    <ClCompile Include="dis6\LayerHeader.cpp" />
+    <ClCompile Include="dis6\LinearObjectStatePdu.cpp" />
+    <ClCompile Include="dis6\LinearSegmentParameter.cpp" />
+    <ClCompile Include="dis6\LogisticsFamilyPdu.cpp" />
+    <ClCompile Include="dis6\LogisticsPdu.cpp" />
+    <ClCompile Include="dis6\Marking.cpp" />
+    <ClCompile Include="dis6\MinefieldDataPdu.cpp" />
+    <ClCompile Include="dis6\MinefieldFamilyPdu.cpp" />
+    <ClCompile Include="dis6\MinefieldPduFamily.cpp" />
+    <ClCompile Include="dis6\MinefieldQueryPdu.cpp" />
+    <ClCompile Include="dis6\MinefieldResponseNackPdu.cpp" />
+    <ClCompile Include="dis6\MinefieldStatePdu.cpp" />
+    <ClCompile Include="dis6\ModulationType.cpp" />
+    <ClCompile Include="dis6\NamedLocation.cpp" />
+    <ClCompile Include="dis6\ObjectType.cpp" />
+    <ClCompile Include="dis6\OneByteChunk.cpp" />
+    <ClCompile Include="dis6\Orientation.cpp" />
+    <ClCompile Include="dis6\Pdu.cpp" />
+    <ClCompile Include="dis6\PduContainer.cpp" />
+    <ClCompile Include="dis6\Point.cpp" />
+    <ClCompile Include="dis6\PointObjectStatePdu.cpp" />
+    <ClCompile Include="dis6\PropulsionSystemData.cpp" />
+    <ClCompile Include="dis6\RadioCommunicationsFamilyPdu.cpp" />
+    <ClCompile Include="dis6\RadioEntityType.cpp" />
+    <ClCompile Include="dis6\ReceiverPdu.cpp" />
+    <ClCompile Include="dis6\RecordQueryReliablePdu.cpp" />
+    <ClCompile Include="dis6\RecordSet.cpp" />
+    <ClCompile Include="dis6\Relationship.cpp" />
+    <ClCompile Include="dis6\RemoveEntityPdu.cpp" />
+    <ClCompile Include="dis6\RemoveEntityReliablePdu.cpp" />
+    <ClCompile Include="dis6\RepairCompletePdu.cpp" />
+    <ClCompile Include="dis6\RepairResponsePdu.cpp" />
+    <ClCompile Include="dis6\ResupplyCancelPdu.cpp" />
+    <ClCompile Include="dis6\ResupplyOfferPdu.cpp" />
+    <ClCompile Include="dis6\ResupplyReceivedPdu.cpp" />
+    <ClCompile Include="dis6\SeesPdu.cpp" />
+    <ClCompile Include="dis6\ServiceRequestPdu.cpp" />
+    <ClCompile Include="dis6\SetDataPdu.cpp" />
+    <ClCompile Include="dis6\SetDataReliablePdu.cpp" />
+    <ClCompile Include="dis6\SetRecordReliablePdu.cpp" />
+    <ClCompile Include="dis6\ShaftRPMs.cpp" />
+    <ClCompile Include="dis6\SignalPdu.cpp" />
+    <ClCompile Include="dis6\SimulationAddress.cpp" />
+    <ClCompile Include="dis6\SimulationManagementFamilyPdu.cpp" />
+    <ClCompile Include="dis6\SimulationManagementWithReliabilityFamilyPdu.cpp" />
+    <ClCompile Include="dis6\SixByteChunk.cpp" />
+    <ClCompile Include="dis6\SphericalHarmonicAntennaPattern.cpp" />
+    <ClCompile Include="dis6\StartResumePdu.cpp" />
+    <ClCompile Include="dis6\StartResumeReliablePdu.cpp" />
+    <ClCompile Include="dis6\StopFreezePdu.cpp" />
+    <ClCompile Include="dis6\StopFreezeReliablePdu.cpp" />
+    <ClCompile Include="dis6\SupplyQuantity.cpp" />
+    <ClCompile Include="dis6\SyntheticEnvironmentFamilyPdu.cpp" />
+    <ClCompile Include="dis6\SystemID.cpp" />
+    <ClCompile Include="dis6\TrackJamTarget.cpp" />
+    <ClCompile Include="dis6\TransferControlRequestPdu.cpp" />
+    <ClCompile Include="dis6\TransmitterPdu.cpp" />
+    <ClCompile Include="dis6\TwoByteChunk.cpp" />
+    <ClCompile Include="dis6\UaPdu.cpp" />
+    <ClCompile Include="dis6\VariableDatum.cpp" />
+    <ClCompile Include="dis6\Vector3Double.cpp" />
+    <ClCompile Include="dis6\Vector3Float.cpp" />
+    <ClCompile Include="dis6\VectoringNozzleSystemData.cpp" />
+    <ClCompile Include="dis6\WarfareFamilyPdu.cpp" />
+    <ClCompile Include="utils\Conversion.cpp" />
+    <ClCompile Include="utils\DataStream.cpp" />
+    <ClCompile Include="utils\IncomingMessage.cpp" />
+    <ClCompile Include="utils\PacketFactory.cpp" />
+    <ClCompile Include="utils\PDUBank.cpp" />
+    <ClCompile Include="utils\PduFactory.cpp" />
+    <ClCompile Include="utils\StreamUtils.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a7547815-763b-46cf-94c3-28b57d399c78}</ProjectGuid>
+    <RootNamespace>OpenDis</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;OPENDIS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/FI pch.h %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;OPENDIS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/FI pch.h %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;OPENDIS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/FI pch.h %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;OPENDIS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/FI pch.h %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
