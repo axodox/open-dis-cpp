@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <!-- The identifier that must be unique within the hosting gallery -->
+    <id>OpenDisCpp</id>
+
+    <!-- The package version number that is used when resolving dependencies -->
+    <version>1.0.0.0</version>
+
+    <!-- Authors contain text that appears directly on the gallery -->
+    <authors>Open-DIS</authors>
+
+    <!-- Owners are typically nuget.org identities that allow gallery
+         users to earily find other packages by the same owners.  -->
+    <owners>axodox</owners>
+
+    <!-- License and project URLs provide links for the gallery -->
+    <license type="expression">BSD-2-Clause</license>
+    <projectUrl>https://github.com/open-dis/open-dis-cpp</projectUrl>
+
+    <!-- The icon is used in Visual Studio's package manager UI -->
+    <!--<icon>icon.png</icon>-->
+
+    <!-- If true, this value prompts the user to accept the license when
+             installing the package. -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <!-- Any details about this particular release -->
+    <releaseNotes>Initial release</releaseNotes>
+
+    <!-- The description can be used in package manager UI. Note that the
+             nuget.org gallery uses information you add in the portal. -->
+    <description>OpenDis C++ Library Headers</description>
+
+    <!-- Copyright information -->
+    <copyright>Copyright ©2021 Open-DIS</copyright>
+
+    <!-- Tags appear in the gallery and can be used for tag searches -->
+    <tags>OpenDIS</tags>
+  </metadata>
+
+  <!-- A readme.txt will be displayed when the package is installed -->
+  <files>
+    <file src="src\dis6\*.h" target="include\dis6" />
+    <file src="src\utils\*.h" target="include\utils" />
+
+    <file src="bin\x64\Debug\OpenDis.dll" target="native\lib\x64\Debug" />
+    <file src="bin\x64\Debug\OpenDis.pdb" target="native\lib\x64\Debug" />
+    <file src="bin\x64\Debug\OpenDis.lib" target="native\lib\x64\Debug" />
+
+    <file src="bin\x64\Release\OpenDis.dll" target="native\lib\x64\Release" />
+    <file src="bin\x64\Release\OpenDis.pdb" target="native\lib\x64\Release" />
+    <file src="bin\x64\Release\OpenDis.lib" target="native\lib\x64\Release" />
+
+    <file src="OpenDis.targets" target="\build\native\OpenDisCpp.targets" />
+  </files>
+</package>
