@@ -5,7 +5,7 @@
     <id>OpenDisCpp</id>
 
     <!-- The package version number that is used when resolving dependencies -->
-    <version>1.0.0.0</version>
+    <version>7.0.0.0</version>
 
     <!-- Authors contain text that appears directly on the gallery -->
     <authors>Open-DIS</authors>
@@ -41,8 +41,9 @@
 
   <!-- A readme.txt will be displayed when the package is installed -->
   <files>
-    <file src="src\dis6\*.h" target="include\dis6" />
-    <file src="src\utils\*.h" target="include\utils" />
+    <file src="src\dis7\*.h" target="include\dis7" />
+    <file src="src\utils\DataStream.h" target="include\utils" />
+    <file src="src\utils\Endian.h" target="include\utils" />
 
     <file src="bin\x64\Debug\OpenDis.dll" target="native\lib\x64\Debug" />
     <file src="bin\x64\Debug\OpenDis.pdb" target="native\lib\x64\Debug" />

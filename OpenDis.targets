@@ -33,6 +33,13 @@
     </ClCompile>
   </ItemDefinitionGroup>
 
+  <ItemGroup>
+    <None Include="$(OpenDis-LibPath)\OpenDis.dll">
+      <Link>%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <PropertyGroup>
     <_NuGetConfiguration></_NuGetConfiguration>
     <_NuGetPlatform></_NuGetPlatform>
